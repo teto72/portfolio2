@@ -1,3 +1,7 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
 .nav {
   background-color: rgba(212, 236, 234, 0.6);
   padding: 15px 60px;
@@ -51,14 +55,72 @@
   font-family: 'Playfair Display', serif;
 }
 
-.about-wrapper {
-  height: 100vh;
-  background-color: forestgreen;
+.about__title {
+  text-align: center;
+  font-size: 40px;
+  background-color: #eee;
 }
 
-.skill-wrapper {
-  height: 100vh;
-  background-color: firebrick;
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__wrapper img {
+  margin: 3rem 6rem;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.about__text {
+  padding: 4rem;
+}
+
+.about__text h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skill__title {
+  text-align: center;
+  font-size: 40px;
+  background-color: #eee;
+}
+
+.skill__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  background-color: blanchedalmond;
+}
+
+.skill__box {
+  width: calc(100%/3);
+}
+
+.skill__box img {
+  width: 100%;
+}
+
+.skill__box:first-child {
+  margin-right: 50px;
+}
+
+.skill__box:last-child {
+  margin-left: 50px;
+}
+
+.skill__text h2 {
+  text-align: center;
+}
+
+.works-title {
+  text-align: center;
+  font-size: 40px;
+  background-color: #eee;
 }
 
 .works-wrapper {
@@ -67,14 +129,39 @@
 }
 
 .contact-wrapper {
-  background-color: grey;
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/10/15/39/email-3597088__480.jpg);
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  text-align: center;
+}
+
+.contact-wrapper a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #161412;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: inline-block;
+}
+
+.contact-wrapper a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contact-wrapper h4 {
+  font-size: 12px;
+  padding: 20px 0;
 }
 
 .title-contact {
   height: 145px;
   text-align: center;
   font-size: 40px;
-  line-height: 145px;
+  line-height: 160px;
   -webkit-box-shadow: 0px 1px 6px #666;
           box-shadow: 0px 1px 6px #666;
   background-color: #F39800;

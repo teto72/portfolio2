@@ -7,7 +7,7 @@ $(function(){
     let href= $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href);
     let position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, 400, "swing");
+    $("html, body").animate({scrollTop:position}, 400, "swing");//スクロール速度
     return false;
   });
 });
