@@ -83,6 +83,10 @@ body {
   color: #333;
 }
 
+.skill {
+  background-color: #FFFCDB;
+}
+
 .skill__title {
   text-align: center;
   font-size: 40px;
@@ -94,7 +98,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 3rem;
-  background-color: blanchedalmond;
 }
 
 .skill__box {
@@ -122,6 +125,7 @@ body {
 
 .skill__icons {
   padding-left: 3rem;
+  padding-bottom: 30px;
 }
 
 .skill__icons .icon-title {
@@ -463,5 +467,29 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.fadein {
+  opacity: 0.1;
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
+}
+
+.skill__box.fadein:nth-of-type(2) {
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
+
+.skill__box.fadein:nth-of-type(3) {
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=style.css.map */
