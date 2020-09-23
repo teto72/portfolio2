@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portforio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
+  <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width:600px)"> -->
 </head>
 <body>
   <header>
@@ -31,18 +32,21 @@
     </ul>
   </nav>
   <section id="HOME" class="home-wrapper">
-    <h1>Portfolio</h1>
-    <h2>Tsubasa Kitagawa</h2>
+    <h1>
+      Portfolio<br>
+      Tsubasa Kitagawa
+    </h1>
+    <!-- <h2>Tsubasa Kitagawa</h2> -->
   </section>
 
   <section id="ABOUT" class="about fadein">
     <h1  id="animate-title" class="about__title">ABOUT</h1>
     <div class="about__wrapper">
       <div class="about__img">
-        <img src="image/stepuup.jpg" alt="">
+        <img src="image/profile.jpg" alt="">
       </div>
       <div class="about__text">
-        <h1>氏名：北川　翼</h1>
+        <h1>氏名：北川 翼</h1>
         <p>1999年生まれ/滋賀県出身</p>
         <p>幼い頃から、ものづくりに興味を持つ。
           新卒で入社した会社が事業再編となり退職、その会社でしか通用しないスキルでは今後不安に思い
@@ -57,9 +61,69 @@
     </div>
   </section>
   
-  <section id="WORKS">
-    <h1 id="animate-title" class="works-title">WORKS</h1>
-    <div class="works-wrapper">
+  <section id="WORKS" class="works">
+    <h1 id="animate-title" class="works__title">WORKS</h1>
+    <div class="works__wrapper">
+    <div class="works__boxs">
+      <div class="box1">
+        <a href="http://54.168.222.33/">
+          <img src="image/teamapp.jpg" alt="制作物画像">
+        </a>
+        <p>
+          <span>フリーマーケットアプリ（クローン）</span><br>
+          <!-- ・開発環境<br>
+            Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code/JavaScript/jQuery<br> -->
+          スクールにて4人チームでアジャイル開発で制作しました。<br>
+          私は、トップページ、商品出品ページ、カテゴリー機能を担当しました。<br>
+          フロント部分に関しては、誰よりも早く仕上げていたので自信があります。<br>
+          カテゴリー機能では、ancestryを使用した親・子・孫関係の配列、データの保存などのバックエンド部分も担当しました。<br>
+          basic認証:    user: freemarket75e / pass: freemarket75epass<br>
+          テストユーザー：email:furimataro@gmail.com / pass:furimataro75
+
+
+        </p>
+      </div>
+      <div class="box2">
+        <a href="http://175.41.197.104/">
+          <img src="image/myapp.jpg" alt="">
+        </a>
+        <p>
+          <span>MotoUP(オリジナルアプリ)</span><br>
+          モータースポーツ専用の写真UPアプリです。<br>
+          初めて0から制作したオリジナルアプリになります。<br>
+          テストユーザー : email:motoup@gmail.com / pass:123456
+        </p>
+      </div>
+      <div class="box1">
+        <a href="http://design-school.online/zero1/august/tsubasakitagawa">
+          <img src="image/HP1.jpg" alt="">
+        </a>
+        <p>
+          <span>トラットリア・ゼロ（レストランHP）</span><br>
+          全てのページを0からデザインして制作してます。テイストは、
+        </p>
+      </div>
+      <div class="box2">
+        <a href="http://175.41.197.104/">
+          <img src="image/stepuup.jpg" alt="">
+        </a>
+        <p>
+          <span>オリジナルアプリ</span> <br>
+          モータースポーツの写真UPアプリです。<br>
+
+        </p>
+      </div>
+      <div class="box1">
+        <a href="http://175.41.197.104/">
+          <img src="image/stepuup.jpg" alt="">
+        </a>
+        <p>
+          <span>オリジナルアプリ</span>
+          モータースポーツの写真UPアプリです。<br>
+
+        </p>
+      </div>
+    </div>
 
     </div>
   </section>
@@ -72,8 +136,8 @@
         <div class="skill__text">
           <h2>Coding</h2>
           <p>
-            HTML5・CSS3・JavaScriptを使用してのコーディングが行えます。
-
+            HTML5・CSS3・JavaScript(jQuery)を使用してのコーディングが行えます。<br>
+            アニメーションやレスポンシブデザインも学習中です。
           </p>
         </div>
       </div>
@@ -82,7 +146,8 @@
         <div class="skill__text">
           <h2>Design</h2>
           <p>
-
+            Photoshopを使用してデザインすることができます。<br>
+            バナーやHPをゼロから制作を行いました。
           </p>
         </div>
       </div>
@@ -102,7 +167,7 @@
           使用言語・ツール
         </div>
         <div class="icon-text">
-          HTML5 / CSS3 / Sass / JavaScript / Ruby / RubyonRails / PHP<br>
+          HTML5 / CSS3 / Sass / JavaScript / jQuery / Ruby / RubyonRails / <br>
           Photoshop /
         </div>
   </section>

@@ -1,4 +1,8 @@
 @import "mixin";
+// レスポンシブデザイン
+@media screen and (max-width: 600px) {
+  @import 'mobile.scss';
+}
 
 body {
   font-family: 'Playfair Display', serif;
@@ -37,11 +41,18 @@ body {
 }
 
 .home-wrapper {
+  position: relative;
+  width: 100%;
   background-color: aqua;
   height: 100vh;
   text-align: center;
-  padding: 300px 200px;
+  // padding: 300px 200px;
   h1,h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   font-family: 'Playfair Display', serif;
   }
 }
@@ -56,16 +67,21 @@ body {
     background-color: #eee;
   }
   &__wrapper {
+    max-width: 1140px;
+    padding: 40px 0;
+    margin: 0 auto;
     display: flex;
+  }
+  &__img {
+    width: 100%;
+    text-align: center;
     img {
-      margin: 4rem 6rem;
-      height: 350px;
-      width: 350px;
-      border-radius: 50%;
+      margin: 1rem;
+      border-radius: 10px;
     }
   }
   &__text {
-    padding: 4rem;
+    padding: 1rem;
     h1 {
       margin-bottom: 20px;
       color: #333;
@@ -84,6 +100,8 @@ body {
     background-color: #eee;
   }
   &__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     padding: 3rem;
   }
@@ -107,29 +125,74 @@ body {
     }
   }
   &__icons {
+    max-width: 1140px;
+    margin: 0 auto;
     padding-left: 3rem;
     padding-bottom: 30px;
     .icon-title {
       font-size: 20px;
       font-weight: bold;
-      width: 500px;
+      width: 100%;
       border-bottom: 3px solid #F39800;
       margin-bottom: 10px;
     }
   }
 }
 
-
-
-.works-title {
-  text-align: center;
+.works {
+  &__title {
+    text-align: center;
     font-size: 40px;
     background-color: #eee;
+  }
+  &__wrapper {
+    height: 100%;
+    // background-color: #F39800;
+  }
+  &__boxs {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+    span {
+      text-decoration: underline  #F39800 ;
+      font-size: 22px;
+    }
+    .box1 {
+      display: flex;
+      padding: 20px;
+      a {
+        width: 50%;
+      }
+      img {
+        width: 100%;
+        box-shadow: 0 10px 20px 0px rgb(189, 187, 187);
+      }
+      p {
+        padding-left: 10px;
+      }
+    }
+    .box2 {
+      flex-flow: row-reverse;
+      display: flex;
+      padding: 20px;
+      a {
+        width: 50%;
+      }
+      img {
+        width: 100%;
+        box-shadow: 0 10px 20px 0px rgb(189, 187, 187);
+      }
+      img:hover {
+        background-color: rgba(47, 47, 47, 0.5);
+      }
+      p {
+        flex: auto;
+
+      }
+    }
+  }
 }
-.works-wrapper {
-  height: 100vh;
-  background-color: goldenrod;
-}
+
 
 // --------------------------
 // index.html側コンタクト部
@@ -278,6 +341,7 @@ body {
     transform: translateY(0);
   }
 }
+
 // -----------------
 // テキストフェードイン
 // -----------------

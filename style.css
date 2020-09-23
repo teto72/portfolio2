@@ -1,3 +1,40 @@
+@media screen and (max-width: 600px) {
+  .home-wrapper {
+    padding: 200px 0 0 0;
+  }
+  .about__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__wrapper img {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+  }
+  .about__text {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  .skill__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .skill__box {
+    width: 100%;
+    display: contents;
+  }
+  .skill__box:first-child {
+    margin-right: 0px;
+  }
+  .skill__box:last-child {
+    margin-left: 0px;
+  }
+  .skill__icons {
+    padding: 1rem;
+  }
+}
+
 body {
   font-family: 'Playfair Display', serif;
 }
@@ -45,13 +82,20 @@ body {
 }
 
 .home-wrapper {
+  position: relative;
+  width: 100%;
   background-color: aqua;
   height: 100vh;
   text-align: center;
-  padding: 300px 200px;
 }
 
 .home-wrapper h1, .home-wrapper h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: 'Playfair Display', serif;
 }
 
@@ -62,20 +106,26 @@ body {
 }
 
 .about__wrapper {
+  max-width: 1140px;
+  padding: 40px 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about__wrapper img {
-  margin: 4rem 6rem;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
+.about__img {
+  width: 100%;
+  text-align: center;
+}
+
+.about__img img {
+  margin: 1rem;
+  border-radius: 10px;
 }
 
 .about__text {
-  padding: 4rem;
+  padding: 1rem;
 }
 
 .about__text h1 {
@@ -94,6 +144,8 @@ body {
 }
 
 .skill__wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +176,8 @@ body {
 }
 
 .skill__icons {
+  max-width: 1140px;
+  margin: 0 auto;
   padding-left: 3rem;
   padding-bottom: 30px;
 }
@@ -131,25 +185,92 @@ body {
 .skill__icons .icon-title {
   font-size: 20px;
   font-weight: bold;
-  width: 500px;
+  width: 100%;
   border-bottom: 3px solid #F39800;
   margin-bottom: 10px;
 }
 
-.works-title {
+.works__title {
   text-align: center;
   font-size: 40px;
   background-color: #eee;
 }
 
-.works-wrapper {
-  height: 100vh;
-  background-color: goldenrod;
+.works__wrapper {
+  height: 100%;
+}
+
+.works__boxs {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.works__boxs span {
+  -webkit-text-decoration: underline  #F39800;
+          text-decoration: underline  #F39800;
+  font-size: 22px;
+}
+
+.works__boxs .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.works__boxs .box1 a {
+  width: 50%;
+}
+
+.works__boxs .box1 img {
+  width: 100%;
+  -webkit-box-shadow: 0 10px 20px 0px #bdbbbb;
+          box-shadow: 0 10px 20px 0px #bdbbbb;
+}
+
+.works__boxs .box1 p {
+  padding-left: 10px;
+}
+
+.works__boxs .box2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.works__boxs .box2 a {
+  width: 50%;
+}
+
+.works__boxs .box2 img {
+  width: 100%;
+  -webkit-box-shadow: 0 10px 20px 0px #bdbbbb;
+          box-shadow: 0 10px 20px 0px #bdbbbb;
+}
+
+.works__boxs .box2 img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.works__boxs .box2 p {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .contact-wrapper {
   background-image: url(https://cdn.pixabay.com/photo/2018/08/10/15/39/email-3597088__480.jpg);
   background-position: center;
+  background-size: contain;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
   text-align: center;
