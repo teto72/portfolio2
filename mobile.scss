@@ -1,0 +1,45 @@
+.home-wrapper {
+  padding: 200px 0 0 0 ;
+}
+.about {
+  &__wrapper {
+    flex-wrap: wrap;
+    img {
+      margin: 1rem;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    padding: 1rem;
+  }
+}
+// .about_img {
+//   img {
+//     padding: 1rem;
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
+
+
+.skill {
+  &__wrapper {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  &__box {
+    width: 100%;
+    display: contents;
+    &:first-child {
+      margin-right: 0px;
+    }
+    &:last-child {
+      margin-left: 0px;
+    }
+  }
+  &__icons {
+    padding: 1rem;
+  }
+}

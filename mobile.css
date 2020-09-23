@@ -1,0 +1,43 @@
+.home-wrapper {
+  padding: 200px 0 0 0;
+}
+
+.about__wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__wrapper img {
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+}
+
+.about__text {
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.skill__wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.skill__box {
+  width: 100%;
+  display: contents;
+}
+
+.skill__box:first-child {
+  margin-right: 0px;
+}
+
+.skill__box:last-child {
+  margin-left: 0px;
+}
+
+.skill__icons {
+  padding: 1rem;
+}
+/*# sourceMappingURL=mobile.css.map */
