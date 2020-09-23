@@ -1,5 +1,5 @@
-.home-wrapper {
-  padding: 200px 0 0 0;
+.home-wrapper h1, .home-wrapper h2 {
+  font-size: 20px !important;
 }
 
 .about__wrapper {
@@ -16,6 +16,47 @@
 .about__text {
   font-size: 14px;
   padding: 1rem;
+}
+
+.works .box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works .box:nth-child(2) {
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.works .box a {
+  width: 100% !important;
+}
+
+.works__banner {
+  display: flow-root !important;
+}
+
+.works__banner #box2 {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works__banner #box2:nth-child(2) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works__banner #box2 img {
+  width: 100%;
+}
+
+.works__banner #box2 a {
+  width: 100%;
+}
+
+.works__banner #box2 p {
+  font-size: 14px;
 }
 
 .skill__wrapper {

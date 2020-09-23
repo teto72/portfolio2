@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
-  .home-wrapper {
-    padding: 200px 0 0 0;
+  .home-wrapper h1, .home-wrapper h2 {
+    font-size: 20px !important;
   }
   .about__wrapper {
     -ms-flex-wrap: wrap;
@@ -14,6 +14,38 @@
   .about__text {
     font-size: 14px;
     padding: 1rem;
+  }
+  .works .box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .works .box:nth-child(2) {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .works .box a {
+    width: 100% !important;
+  }
+  .works__banner {
+    display: flow-root !important;
+  }
+  .works__banner #box2 {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .works__banner #box2:nth-child(2) {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .works__banner #box2 img {
+    width: 100%;
+  }
+  .works__banner #box2 a {
+    width: 100%;
+  }
+  .works__banner #box2 p {
+    font-size: 14px;
   }
   .skill__wrapper {
     -ms-flex-wrap: wrap;
@@ -85,19 +117,27 @@ body {
 .home-wrapper {
   position: relative;
   width: 100%;
-  background-color: aqua;
-  height: 100vh;
-  text-align: center;
+  background: url(image/sky.jpg);
+  background-size: cover;
+  height: 90vh;
 }
 
 .home-wrapper h1, .home-wrapper h2 {
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 20%;
+}
+
+.home-wrapper h1 {
+  font-size: 50px;
+  margin-top: -50px;
+  letter-spacing: 3px;
   font-family: 'Playfair Display', serif;
+}
+
+.home-wrapper h2 {
+  font-size: 70px;
+  letter-spacing: 12px;
 }
 
 .about__title {
@@ -205,6 +245,10 @@ body {
   padding: 30px 0;
 }
 
+.works__boxs .marker {
+  color: #3E3A39;
+}
+
 .works__boxs span {
   -webkit-text-decoration: underline  #F39800;
           text-decoration: underline  #F39800;
@@ -238,7 +282,7 @@ body {
 }
 
 .works__boxs .box p {
-  padding-left: 20px;
+  padding: 0 20px 0;
 }
 
 .works__boxs .box:nth-child(2) {
@@ -257,7 +301,7 @@ body {
 .works__banner {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

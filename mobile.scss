@@ -1,5 +1,7 @@
 .home-wrapper {
-  padding: 200px 0 0 0 ;
+  h1,h2 {
+    font-size: 20px !important;
+  }
 }
 .about {
   &__wrapper {
@@ -15,14 +17,37 @@
     padding: 1rem;
   }
 }
-// .about_img {
-//   img {
-//     padding: 1rem;
-//     width: 200px;
-//     height: 200px;
-//   }
-// }
 
+.works {
+  .box {
+    &:nth-child(2) {
+      flex-wrap: wrap !important;
+    }
+    flex-wrap: wrap;
+    a {
+      width: 100% !important;
+    }
+  }
+  &__banner {
+    display: flow-root !important;
+    #box2 {
+      width: 100%;
+      &:nth-child(2) {
+        flex-wrap: wrap ; 
+      }
+      img {
+        width: 100% ;
+      }
+      flex-wrap: wrap;
+      a {
+        width: 100% ;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
 
 .skill {
   &__wrapper {
