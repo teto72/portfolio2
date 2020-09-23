@@ -16,6 +16,7 @@ body {
   z-index: 10;
   width: 100%;
   &__menu {
+    max-width: 1140px;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -64,7 +65,8 @@ body {
   &__title {
     text-align: center;
     font-size: 40px;
-    background-color: #eee;
+    margin-top: 100px;
+    // background-color: #eee;
   }
   &__wrapper {
     max-width: 1140px;
@@ -93,11 +95,11 @@ body {
 // スキル詳細エリア
 // -------------
 .skill {
-  background-color: #FFFCDB;
+  // background-color: #f2f2f2;
   &__title {
     text-align: center;
     font-size: 40px;
-    background-color: #eee;
+    // background-color: #eee;
   }
   &__wrapper {
     max-width: 1140px;
@@ -139,11 +141,15 @@ body {
   }
 }
 
+// ---------------
+// Worksエリア
+// ---------------
 .works {
+  background-color: #f2f2f2;
   &__title {
     text-align: center;
     font-size: 40px;
-    background-color: #eee;
+    // background-color: #eee;
   }
   &__wrapper {
     height: 100%;
@@ -157,7 +163,7 @@ body {
       text-decoration: underline  #F39800 ;
       font-size: 22px;
     }
-    .box1 {
+    .box {
       display: flex;
       padding: 20px;
       a {
@@ -165,29 +171,40 @@ body {
       }
       img {
         width: 100%;
+        transition: box-shadow 1s ease-out, transform .7s ease-out;
+      }
+      img:hover {
         box-shadow: 0 10px 20px 0px rgb(189, 187, 187);
+        transform: translateY(-15px);
+      }
+      p {
+        padding-left: 20px;
+      }
+      &:nth-child(2) {
+        flex-flow: row-reverse;
+        p {
+          flex: auto;
+        }
+      }
+    }
+  }
+  &__banner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    span {
+      font-size: 22px;
+      text-decoration: underline #A2D7D4;
+    }
+    .box3 {
+      width: 50%;
+      display: flex;
+      img {
+        width: 50%;
       }
       p {
         padding-left: 10px;
-      }
-    }
-    .box2 {
-      flex-flow: row-reverse;
-      display: flex;
-      padding: 20px;
-      a {
-        width: 50%;
-      }
-      img {
-        width: 100%;
-        box-shadow: 0 10px 20px 0px rgb(189, 187, 187);
-      }
-      img:hover {
-        background-color: rgba(47, 47, 47, 0.5);
-      }
-      p {
-        flex: auto;
-
       }
     }
   }
@@ -198,11 +215,12 @@ body {
 // index.html側コンタクト部
 // --------------------------
 .contact-wrapper {
-  background-image: url(https://cdn.pixabay.com/photo/2018/08/10/15/39/email-3597088__480.jpg);
-  background-position: center;
-  background-size: contain;
-  background-color:rgba(255,255,255,0.6);
-  background-blend-mode:lighten;
+  // background-image: url(https://cdn.pixabay.com/photo/2018/08/10/15/39/email-3597088__480.jpg);
+  // background-position: center;
+  // background-size: contain;
+  // background-color:rgba(255,255,255,0.6);
+  // background-blend-mode:lighten;
+  background: #f2f2f2;
   text-align: center;
   a {
     font-size: 40px;
