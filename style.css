@@ -119,10 +119,12 @@ body {
   width: 100%;
   background: url(image/sky.jpg);
   background-size: cover;
+  background-position: center;
   height: 90vh;
 }
 
 .home-wrapper h1, .home-wrapper h2 {
+  text-shadow: 2px 3px 6px #333;
   position: absolute;
   top: 50%;
   left: 20%;
@@ -249,7 +251,7 @@ body {
   color: #3E3A39;
 }
 
-.works__boxs span {
+.works__boxs cite {
   -webkit-text-decoration: underline  #F39800;
           text-decoration: underline  #F39800;
   font-size: 22px;
@@ -307,7 +309,7 @@ body {
   display: flex;
 }
 
-.works__banner span {
+.works__banner cite {
   font-size: 22px;
   -webkit-text-decoration: underline #A2D7D4;
           text-decoration: underline #A2D7D4;
