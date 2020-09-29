@@ -8,39 +8,41 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.nav {
+// 固定メニュー
+#global-navi {
   background-color: rgba(212,236,234,0.6);
-  padding: 15px 60px;
   position: fixed;
   top: 0;
-  z-index: 10;
+  right: 0px;
   width: 100%;
-  &__menu {
-    max-width: 1140px;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
+  z-index: 10;
+}
+#wrapper ul {
+  text-align: end;
+}
+#wrapper nav ul li{
+  display:inline-block;
+  font-size: 16px;
+  padding: 20px;
+  text-align: right;
+}
+#wrapper nav ul li a{
+  color: #121212;
+  text-decoration: none;
+  &:after {
+    content: "";
+    border-bottom: solid 2px #F39800;
+    bottom: 0;
+    display: block;
+    transition: all .3s ease;
+    width: 0;
   }
-  &__item {
-    margin-left: 20px;
-    a {
-      text-decoration: none;
-      color: #121212;
-    }
-    a:after {
-      content: "";
-      border-bottom: solid 2px #F39800;
-      bottom: 0;
-      display: block;
-      transition: all .3s ease;
-      width: 0;
-    }
-    a:hover::after {
-      width: 100%;
-    }
+  &:hover::after {
+    width: 100%;
   }
 }
 
+// HOMEエリア
 .home-wrapper {
   position: relative;
   width: 100%;
@@ -48,7 +50,6 @@ body {
   background-size: cover;
   background-position: center;
   height: 90vh;
-  // text-align: center;
   h1,h2 {
     text-shadow: 2px 3px 6px #333;
     position: absolute;
@@ -59,11 +60,6 @@ body {
   font-size: 50px;
   margin-top: -50px;
   letter-spacing: 3px;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // margin-right: -50%;
-  // transform: translate(-50%, -50%);
   font-family: 'Playfair Display', serif;
   }
   h2 {
