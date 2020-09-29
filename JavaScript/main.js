@@ -55,3 +55,67 @@ $(window).scroll(function (){
           }
       });
   });
+
+
+
+// class MobileMenu {
+//   constructor() {
+//     this.DOM = {};
+//     this.DOM.btn = document.querySelector('.mobile-menu__btn');
+//     this.DOM.container = document.querySelector('#global-contanier');
+//     this.DOM.btn.addEventListener('click',this._toggle.bind(this));
+//   }
+
+//   _toggle() {
+//     this.DOM.container.classList.toggle('menu-open');
+//   }
+// }
+
+// new MobileMenu();
+
+// class MobileMenu {
+//   constructor() {
+//       this.DOM = {};
+//       this.DOM.btn = document.querySelector('.mobile-menu__btn');
+//       this.DOM.cover = document.querySelector('.mobile-menu__cover');
+//       this.DOM.container = document.querySelector('#global-container');
+//       this.eventType = this._getEventType();
+//       this._addEvent();
+//   }
+
+//   _getEventType() {
+//       return window.ontouchstart ? 'touchstart' : 'click';
+//   }
+
+//   _toggle() {
+//       this.DOM.container.classList.toggle('menu-open');
+//   }
+
+//   _addEvent() {
+//       this.DOM.btn.addEventListener(this.eventType, this._toggle.bind(this));
+//       this.DOM.cover.addEventListener(this.eventType, this._toggle.bind(this));
+//   }
+// }
+
+// new MobileMenu();
+
+
+// ハンバーガーメニュー
+$(function(){
+  $(".btn-gnavi").on("click", function(){
+      // ハンバーガーメニューの位置を設定
+      var rightVal = 0;
+      if($(this).hasClass("open")) {
+          // 位置を移動させメニューを開いた状態にする
+          rightVal = -300;
+          // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+          $(this).removeClass("open");
+      } else {
+          // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+          $(this).addClass("open");
+      }
+      $("#global-navi").stop().animate({
+          right: rightVal
+      }, 200);
+  });
+});
