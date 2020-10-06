@@ -89,6 +89,7 @@
   }
   .home-wrapper h1, .home-wrapper h2 {
     font-size: 20px !important;
+    left: 20% !important;
   }
   .about__wrapper {
     -ms-flex-wrap: wrap;
@@ -201,7 +202,7 @@ body {
 .home-wrapper {
   position: relative;
   width: 100%;
-  background: url(image/sky.jpg);
+  background: url(image/bg-HP);
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -211,7 +212,7 @@ body {
   text-shadow: 2px 3px 6px #333;
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 55%;
 }
 
 .home-wrapper h1 {
